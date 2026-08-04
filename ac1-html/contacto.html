@@ -20,5 +20,60 @@
             <li><a href="nosotros.html">nosotros</a></li>
         </ul>
     </header>
+
+    <form action="formulario">formulario
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" minlength="10" maxlength="50" placeholder="Ana Sanchez" required>
+
+
+
+            <label for="number">Telefono:</label>
+            <input type="tel" id="number" name="number" required pattern="[0-9]{8}" placeholder="36273947">
+
+        </fieldset>
+        <fieldset>
+            <legend>Correo</legend>
+            <label for="correo">Correo electronico:</label>
+            <input type="email" id="correo" name="correo" placeholder="jaime@gmail.com" required>
+
+            <label for="clave">Codigo de Confirmación</label>
+            <input type="password" id="clave" name="clave" maxlength="8" required>
+
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>calendario de cita</legend>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Validacion</legend>
+            <input type="checkbox" id="terminos" name="terminos" value="terminos" required>
+            <label for="terminos">acepto los terminos y servicios</label>
+        </fieldset>
+        <fieldset>
+            <legend>comentario</legend>
+            <textarea name="comentario" id="comentario" maxlength="300" placeholder="Ingrse su comentario"></textarea>
+        </fieldset>
+        <button type="submit">enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+
+             <footer id="pie_de_pagina">
+      <h2>Contacto</h2>
+      <address>
+        taller rueda libre
+        <br>
+        Correo: <a href="mailto:wallace@ejemplo.com">wallace@ejemplo.com</a>
+      </address>
+      <p>
+        <small> 2026 taller rueda libre. Todos los derechos reservados</small>
+      </p>
+    </footer>
 </body>
+
 </html>
