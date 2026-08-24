@@ -34,18 +34,29 @@ h1{
 
 h2{
     font-size: 2.4rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    
+}
+
+.h2{
     border-bottom: solid black;
     border-radius: 0,2rem;
-    margin-top: 0.5rem;
-    
 }
 
 h3{
     font-size: 2.0rem;
+    border-bottom: 0.1rem solid grey;
+    border-radius: 0,2rem;
 }
 
 p{
     font-size: 1.6rem;
+}
+
+p::first-letter{
+    font-weight: bold;
+    color: #371809;
 }
 
 /*Indispensable*/
@@ -80,7 +91,7 @@ p{
 } 
 
 .banner{
-    display: flex;
+    padding: 12rem; display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -93,6 +104,10 @@ p{
     background-color: #895330;
     width: 20rem;
     padding: 0.5rem;
+}
+
+.boton-principal:active{
+    background-color: #683217;
 }
 
 .menu-principal ul{
@@ -120,20 +135,79 @@ a:hover{
 
 /*Cuerpo*/
 
+#servicios{
+    margin-top: 5rem;
+    margin-left: 20rem;
+    margin-bottom: 5rem;
+}
+
+#historia{ 
+    margin-left: 20rem;
+    margin-bottom: 5rem;
+}
+
+#aviso{
+    margin-left: 20rem;
+    margin-bottom: 5rem;
+}
+
 .rejilla-servicios{
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    padding-left: 8rem;
+    text-align: start;
     gap: 4rem;
-    margin: 2rem;
+    margin: 1.5rem;
+    padding: 5rem;
 }
 
 .tarjeta{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: start;
-    gap: 0.5rem;
-    border: solid gray;
-    padding: 2rem;
+    gap: 0.4rem;
+    border: 0.1rem solid gray;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+    background-color: #fff;
 }
+
+.panel-aviso{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    background-color: #fff;
+    padding: 3rem;
+    border-left: 0.2rem solid #895330;
+}
+
+.cita{
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 3rem;
+    border-left: 0.2rem solid #895330;
+}
+
+/*Footer*/
+
+#pie{
+    display: flex;
+    gap: 0.5rem;
+    padding: 8rem;
+    width: 160rem;
+    border-bottom: 0.2rem white solid;
+    border-color: #fff;
+    background-color: #683217;
+}
+
+.creditos{
+    display: flex;
+    justify-content: center;
+    border-top: 0.2rem #fff solid;
+}
+
