@@ -39,12 +39,19 @@ h2{
     
 }
 
+.h2-1{
+    border-bottom: 0.1rem solid grey;
+    border-radius: 0,2rem;
+}
 .h2{
-    border-bottom: solid black;
+    color: #683217;
+    font-size: 2.0rem;
+    border-bottom: 0.1rem solid grey;
     border-radius: 0,2rem;
 }
 
 h3{
+    color: #683217;
     font-size: 2.0rem;
     border-bottom: 0.1rem solid grey;
     border-radius: 0,2rem;
@@ -83,9 +90,9 @@ p::first-letter{
     display: grid;
     text-align: center;
     align-items: center;
-    width: 100%;
+    width: 140rem;
     padding: 12rem;
-    margin-left: 20rem;
+    margin-left: 5rem;
     border-color: white;
     background-color: #683217;
 } 
@@ -104,6 +111,7 @@ p::first-letter{
     background-color: #895330;
     width: 20rem;
     padding: 0.5rem;
+    cursor: pointer;
 }
 
 .boton-principal:active{
@@ -181,6 +189,8 @@ a:hover{
     justify-content: baseline;
     background-color: #fff;
     padding: 3rem;
+    /* width: 140rem; */
+    margin-left: 5rem;
     border-left: 0.2rem solid #895330;
 }
 
@@ -207,6 +217,7 @@ a:hover{
 
 .creditos{
     display: flex;
+    width: 150rem;
     justify-content: center;
     border-top: 0.2rem #fff solid;
 }
@@ -248,4 +259,67 @@ tr:hover{
 
 tfoot{
     background-color:#85614f;
+}
+
+/*Listas*/
+
+/* .ul{
+    padding-left: 1rem;
+    
+} */
+
+.lista-categorias{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul{
+    padding-left: 2rem;
+}
+
+.glosario{
+    display: grid;
+    background-color: #fff;
+    padding: 2rem;
+    width: 150rem;
+}
+
+dt{
+    color: #895330;
+}
+
+dd{
+    margin-left: 2rem;
+}
+
+/*formulario*/
+#pedido{
+    display: grid;
+    margin-top: 1rem;
+    gap: 1rem;
+    background-color: #fff;
+    grid-template-columns: repeat(,1fr);
+    padding: 3rem;
+}
+
+.grupo-campos{
+    display: flex;
+    flex-direction: column;
+}
+
+form input:invalid:not(:placeholder-shown){
+    border-color: red;
+}
+
+form input:valid:not(:placeholder-shown){
+    border-color: green;
+}
+
+input[type="text"],[type="email"],[type="tel"]{
+    display: flex;
+    border-radius: ;
+    width: 50rem;
+    gap: 2rem;
+    border: 0.1rem solid gray;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
