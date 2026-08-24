@@ -211,3 +211,41 @@ a:hover{
     border-top: 0.2rem #fff solid;
 }
 
+/*Catalogo*/
+
+.indice{
+    display: grid;
+    background-color: #a68575;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    grid-template-rows:repeat(auto-fit, minmax(auto))
+}
+
+.indice ul{
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+}
+
+.tabla-catalogo{
+    border-collapse: collapse;
+    width: 150rem;
+    height: 40rem;
+    
+}
+
+thead{
+    background-color: #371809;
+    color: #fff;
+}
+
+tr:nth-child(even){
+    background-color: #a68575;
+}
+tr:hover{
+    background-color: #fff;
+}
+
+tfoot{
+    background-color:#85614f;
+}
