@@ -106,11 +106,11 @@ h3{
     background-color: var(--color-boton);
 }
 
-/* .navegacion a:active{
-    color: var(--color-boton);
-    border: 1rem solid var(--blanco);
-    background-color: #fff;
-} */
+.navegacion a:active{
+    color: #2D4A5C;
+    background-color: var(--blanco);
+    transform: var(--transition);
+}
 
 .navegacion a{
     display: flex;
@@ -141,7 +141,7 @@ a{
 /*seccion filas*/
 
 #servicios{
-   
+   display: block;
 }
 
 #servicios h2{
@@ -152,7 +152,6 @@ a{
 .bloques-servicio {
     display: grid;
     grid-template-columns: var(--grid);
-    box-shadow: var(--sombra-2);
     gap: 2rem;
 }
 
@@ -161,6 +160,41 @@ a{
     grid-template-columns: var(--grid);
     box-shadow: var(--sombra-2);
     padding: 2rem;
+    border-radius: 0.6rem;
+}
+
+/*contenido cita*/
+
+#origen{
+    margin-bottom: 2rem;
+}
+
+#origen h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.testimonio{
+    box-shadow: var(--sombra-2);
+    padding: 2rem;
+    border-left: 1rem solid var(--color-hero-alt);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonio::before{
+    content: '"';
+    color: var(--color-hero-alt);
+}
+
+.testimonio-autoria{
+    text-align: end;
+    font-size: small;
+    color: #C46B4A;
+}
+
+#nota{
+    margin-bottom: 2rem;
 }
 
 /*pie*/
