@@ -1,0 +1,161 @@
+:root{
+    --tinta: #1C1C1C;
+    --color-logo: #1C1C1C;
+    --color-boton: #C46B4A;
+    --blanco: #fff;
+    --color-hero-alt: #c34d22;
+    --fondo-alt: #F2EEE9;
+    --color-logo: #2D4A5C;
+ 
+ 
+/* FUENTES Y TITULOS */
+    --fuente-titulo: Georgia, "Times New Roman", serif;
+    --fuente-texto: "Trebuchet MS", Arial, sans-serif;
+ 
+/* ESPACIADO CONVERSION 1REM=10PX*/
+    --esp-xs: 0.8rem;
+    --esp-sm: 1.6rem;
+    --esp-md: 2.4rem;
+    --esp-lg: 4.0rem;
+    --esp-xl: 8.0rem;
+ 
+/* OTROS ELEMENTOS */
+    --radio: 0.6rem;
+    --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,0.6);/* APENAS SEPARADO */
+    --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,0.4);/* TARJETAS */
+    --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,0.16);/* ELEMENTOS ELEVADOS*/
+    --transition: all 0.25s ease;
+    --ancho-max: 120rem;
+ 
+/* GRID */
+    --grid: repeat(auto-fit, minmax(30rem, 1fr));
+ 
+/* FLEX */
+    --flex: 1 1 28rem;
+}
+ 
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html{
+    font-size: 62.5%;
+}
+ 
+body{
+    max-width: 100%;
+    width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-family: var(--fuente-texto);
+    color: var(--tinta);
+}
+
+h1, h2, h3{
+    font-family: var(--fuente-titulo);
+}
+
+h1{
+    font-size: 4.8rem; 
+}
+
+h2{
+    font-size: 2.4rem;
+    color: #2D4A5C;
+}
+
+h3{
+    font-size: 2.0rem;
+    color: #2D4A5C;
+}
+ 
+
+/*encabezado*/
+
+#cabecera{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #2D4A5C;
+    position: sticky;
+    top: 0;
+    margin-bottom: 4rem;
+}
+
+.identidad{
+    color: var(--blanco);
+}
+
+.navegacion ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 2rem;
+    gap: 4rem;
+}
+
+.navegacion a:hover{
+    color: var(--color-boton);
+}
+
+.navegacion a{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    color: var(--blanco);
+}
+
+a{
+    text-decoration: none;
+}
+
+.destacado{
+    
+}
+
+/*seccion filas*/
+
+#servicios{
+   
+}
+
+#servicios h2{
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.bloques-servicio {
+    display: grid;
+    grid-template-columns: var(--grid);
+    box-shadow: var(--sombra-2);
+    gap: 2rem;
+}
+
+.bloque{
+    display: grid;
+    grid-template-columns: var(--grid);
+    box-shadow: var(--sombra-2);
+    padding: 2rem;
+}
+
+/*pie*/
+
+#pie{
+    background-color: #2D4A5C;
+    color: var(--blanco);
+    padding: 4rem;
+}
+
+.derechos{
+    border-top: 0.2rem solid var(--blanco);
+    text-align: center;
+    margin-top: 2rem;
+}
