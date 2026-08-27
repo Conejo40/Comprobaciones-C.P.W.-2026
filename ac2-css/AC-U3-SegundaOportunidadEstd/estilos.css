@@ -92,6 +92,7 @@ h3{
     list-style-type: none;
     padding: 2rem;
     gap: 4rem;
+    animation: lados 2s ease;
 }
 
 .navegacion a:hover{
@@ -121,14 +122,34 @@ a{
     text-decoration: none;
 }
 
-#bienvenida{
-    padding: 2rem;
-    border-left: 1rem solid var(--color-hero-alt);
-    margin-bottom: 2rem;
-}
-
 .destacado{
     box-shadow: var(--sombra-2);
+    animation: lados 2s ease;
+    border-radius: var(--radio);
+}
+
+#grupos h3{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes lados{
+    0%{
+        transform: translateX(5px);
+    } 
+
+    50%{
+       transform: translateX(0);
+    } 
+    
+   /*  75%{
+        transform: translateX(-5px);
+    } */
+    
+    100%{
+        transform: translateX(0);
+    }
+    
 }
 
 /*seccion filas*/
@@ -148,12 +169,32 @@ a{
     gap: 2rem;
 }
 
+@keyframes arriba-abajo{
+    0%{
+        transform: translateY(5px);
+    } 
+
+    50%{
+       transform: translateY(0);
+    } 
+    
+   /*  75%{
+        transform: translateY(-5px);
+    } */
+    
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
 .bloque{
     display: grid;
     grid-template-columns: var(--grid);
     box-shadow: var(--sombra-2);
     padding: 2rem;
     border-radius: 0.6rem;
+    animation: arriba-abajo 2s ease;
 }
 
 /*contenido cita*/
@@ -173,6 +214,8 @@ a{
     border-left: 1rem solid var(--color-hero-alt);
     margin-bottom: 2rem;
     margin-top: 2rem;
+    animation: lados 2s ease;
+    border-radius: var(--radio);
 }
 
 .testimonio::before{
@@ -212,6 +255,7 @@ a{
     border-radius: 0.4rem;
     padding: 1rem;
     background-color: #C46B4A;
+    animation: lados 2s ease;
 }
 
 .sumario ul{
@@ -246,6 +290,7 @@ tr th, tr td{
 .tabla-especies{
     border-collapse: collapse;
     width: 100%;
+    animation: arriba-abajo 2s ease;
 }
 
 thead{
@@ -270,9 +315,6 @@ tbody tr:hover{
 }
 
 /*grupos y listas*/
-
-#grupos ul{
-}
 
 /* #grupos h2{
     text-align: center;
@@ -312,6 +354,7 @@ fieldset{
     box-shadow: var(--sombra-1);
     background-color: #F2EEE9;
     border: none;
+    animation: arriba-abajo 2s ease;
 }
 
 .linea-campo{
@@ -385,4 +428,14 @@ input{
 .accion-secundaria:active{
     background-color: var(--blanco);
     color: #2D4A5C;
+}
+
+.regresar{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.regresar a{
+    color: var(--color-boton);
+    text-align: center;
 }
