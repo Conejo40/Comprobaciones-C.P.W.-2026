@@ -102,23 +102,40 @@ h3{
 }
 
 .navegacion a:hover{
-    color: var(--color-boton);
+    color: var(--blanco);
+    background-color: var(--color-boton);
 }
+
+/* .navegacion a:active{
+    color: var(--color-boton);
+    border: 1rem solid var(--blanco);
+    background-color: #fff;
+} */
 
 .navegacion a{
     display: flex;
     text-decoration: none;
     list-style-type: none;
     align-items: center;
-    color: var(--blanco);
+    color: #000;
+    border: 0.1rem solid var(--blanco);
+    padding: 1rem;
+    border-radius: 0.4rem;
+    background-color: var(--blanco);
 }
 
 a{
     text-decoration: none;
 }
 
+#bienvenida{
+    padding: 2rem;
+    border-left: 1rem solid var(--color-hero-alt);
+    margin-bottom: 2rem;
+}
+
 .destacado{
-    
+    box-shadow: var(--sombra-2);
 }
 
 /*seccion filas*/
