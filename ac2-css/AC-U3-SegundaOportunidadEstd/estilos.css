@@ -262,9 +262,127 @@ tbody tr th{
 }
 
 tr:nth-child(even){
-    background-color: var(--color-hero-alt);
+    background-color: var(--color-boton);
 }
 
 tbody tr:hover{
     background-color: #F2EEE9;
+}
+
+/*grupos y listas*/
+
+#grupos ul{
+}
+
+/* #grupos h2{
+    text-align: center;
+} */
+
+.lista-grupos{
+    list-style-type: square;
+}
+
+.lista-grupos ul{
+    padding-left: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+dt{
+    font-weight: bold;
+}
+
+dd{
+    margin-left: 4rem;
+}
+
+/*formulario*/
+
+#encargo{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+fieldset{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: var(--sombra-1);
+    background-color: #F2EEE9;
+    border: none;
+}
+
+.linea-campo{
+    margin-bottom: 2rem;
+}
+
+form input:invalid:not(:placeholder-shown){
+    border-color: red;
+}
+
+form input:invalid:not(:placeholder-shown){
+    border-color: green;
+}
+
+input{
+    display: block;
+    width: 98%;
+    padding: 0.5rem;
+    border-radius: var(--radio);
+}
+
+.opcion-radio{
+    display: flex;
+    gap: 2rem;
+}
+
+#comentarios{
+    display: block;
+    width: 98%;
+    padding: 3rem;
+
+}
+
+#acepto{
+    width: 4%;
+}
+
+#envio{
+    width: 4%;
+}
+
+#vivero{
+   width: 4%; 
+}
+
+.accion-primaria{
+    width: 15rem;
+    padding: 1rem;
+}
+
+.accion-primaria:hover{
+    color: var(--blanco);
+    background-color: var(--color-boton);
+}
+
+.accion-primaria:active{
+    color: var(--color-boton);
+    background-color: var(--blanco);
+}
+
+.accion-secundaria{
+    width: 15rem;
+    padding: 1rem;
+}
+
+.accion-secundaria:hover{
+    color: var(--blanco);
+    background-color: #2D4A5C;
+}
+
+.accion-secundaria:active{
+    background-color: var(--blanco);
+    color: #2D4A5C;
 }
