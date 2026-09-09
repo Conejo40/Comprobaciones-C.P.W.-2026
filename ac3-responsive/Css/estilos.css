@@ -655,4 +655,34 @@ img {
   margin-bottom: 0;
 }
 
-@media (min)
+@media (min-width: 768px){
+  h1{font-size: 4.0rem;}
+  h2{font-size: 3.2rem;}
+  h3{font-size: 2.4rem;}
+  body{font-size: 1.6rem;}
+
+  .portada{
+    max-width: 76.8rem;
+  } 
+
+  /* .portada-caja{
+    height: 50rem;
+  } */
+
+  .seccion-alterna{
+    max-width: 76.8rem;
+  }
+
+  .fila-propuestas{
+    max-width: 76.8rem;
+  }
+
+  .cita{
+    max-width: 76.8rem;
+  }
+
+  .pie{
+    max-width: 76.8rem;
+  }
+
+}
