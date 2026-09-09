@@ -46,9 +46,10 @@ html{
 body {
   font-family: var(--fuente-texto);
   font-size: 1.7rem;
-  line-height: 1.65;
+  line-height: 1.6;
   color: var(--tinta);
   background-color: var(--crema);
+  width: 100%;
 }
 
 h1, h2, h3 {
@@ -57,9 +58,9 @@ h1, h2, h3 {
   color: var(--verde);
 }
 
-h1 { font-size: 5.2rem; }
-h2 { font-size: 3.4rem; }
-h3 { font-size: 2.2rem; }
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 2rem; }
 
 p { margin-bottom: 1.8rem; }
 
@@ -70,12 +71,15 @@ a {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 .seccion {
-  width: 1180px;
+  max-width: 43rem;
+  /* width: 118rem; */
   margin-left: auto;
   margin-right: auto;
   padding: 9rem 3rem;
@@ -87,7 +91,8 @@ img {
 }
 
 .seccion-alterna > * {
-  width: 118rem;
+  max-width: 43rem;
+  /* width: 118rem; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -98,7 +103,8 @@ img {
 }
 
 .seccion-entrada {
-  width: 64rem;
+  max-width: 43rem;
+  /* width: 64rem; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4.8rem;
@@ -107,7 +113,8 @@ img {
 }
 
 .pagina-encabezado {
-  width: 118rem;
+  max-width: 43rem;
+  /* width: 118rem; */
   margin: 0 auto;
   padding: 8rem 3rem 4.8rem;
   text-align: center;
@@ -123,11 +130,37 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 118rem;
+  max-width: 43rem;
+  /* width: 118rem; */
   margin: 0 auto;
+  position: sticky;
+  top: 0;
   padding: 1.8rem 3rem;
   background-color: var(--blanco);
   border-bottom: 0.1rem solid var(--linea);
+}
+
+.menu{
+  display: block;
+  position: absolute;
+  background-color: rgba(18, 78, 18, 0.10);
+  top: 100%;
+  width: 0;
+  height: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.menu-h{
+  display: none;
+} 
+
+.menu-h:checked ~ .menu{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
 }
 
 .marca {
@@ -197,7 +230,7 @@ img {
   background-color: rgba(0, 0, 0, 0.48);
   padding: 4.8rem;
   border-radius: var(--radio);
-  width: 72rem;
+  width: 42rem;
 }
 
 .portada-titulo {
@@ -215,7 +248,12 @@ img {
 /* ─── TARJETAS · Flexbox ─────────────────────────────────────────────── */
 .fila-propuestas {
   display: flex;
+  flex-wrap: wrap;
   gap: 2.6rem;
+}
+
+.seccion-entrada{
+  width: 40ch;
 }
 
 .tarjeta {
@@ -252,7 +290,7 @@ img {
 /* ─── GALERÍA · Grid ─────────────────────────────────────────────────── */
 .rejilla-galeria {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: 1.8rem;
 }
 
@@ -288,7 +326,8 @@ img {
 
 /* ─── CITA ───────────────────────────────────────────────────────────── */
 .cita {
-  width: 72rem;
+  max-width: 43rem;
+  /* width: 72rem; */
   margin: 0 auto;
   padding: 4.4rem;
   background-color: var(--blanco);
@@ -313,7 +352,8 @@ img {
 
 /* ─── ÍNDICE INTERNO ─────────────────────────────────────────────────── */
 .indice {
-  width: 118rem;
+  max-width: 43rem;
+  /* width: 118rem; */
   margin: 0 auto 2rem;
   padding: 0 3rem;
 }
@@ -339,7 +379,8 @@ img {
   background-color: var(--blanco);
   border-radius: var(--radio);
   overflow: hidden;
-  box-shadow: var(--sombra);
+  overflow-x: auto;
+  box-shadow: var(--sombra); 
 }
 
 .tabla-titulo {
@@ -443,7 +484,8 @@ img {
 
 /* ─── FORMULARIO ─────────────────────────────────────────────────────── */
 .formulario {
-  width: 72rem;
+  max-width: 43rem;
+  /* width: 72rem; */
   margin: 0 auto;
 }
 
@@ -570,7 +612,8 @@ img {
 }
 
 .pie-columnas {
-  width: 118rem;
+  max-width: 43rem;
+  /* width: 118rem; */
   margin: 0 auto;
   display: flex;
   gap: 4.4rem;
@@ -601,7 +644,8 @@ img {
 .pie-enlace:hover { border-bottom-color: var(--blanco); }
 
 .pie-creditos {
-  width: 118rem;
+  max-width: 43rem;
+  /* width: 118rem; */
   margin: 4.4rem auto 0;
   padding-top: 1.8rem;
   border-top: 0.1rem solid rgba(255, 255, 255, 0.22);
@@ -610,3 +654,5 @@ img {
   opacity: 0.72;
   margin-bottom: 0;
 }
+
+@media (min)
