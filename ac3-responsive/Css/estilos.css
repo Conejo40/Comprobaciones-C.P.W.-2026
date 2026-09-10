@@ -216,7 +216,7 @@ img {
 /* ─── PORTADA ────────────────────────────────────────────────────────── */
 .portada {
   background-color: var(--verde);
-  background-image: url('../recursos/portada.jpg');
+  background-image: url('../recursos/portada-movil.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -671,6 +671,7 @@ img {
   }
 
    .portada{
+    background-image: url('../recursos/portada-tablet.jpg');
     align-items: center;
     width: 100%;
   }   
@@ -704,8 +705,12 @@ img {
   }
 
   .indice{
-    align-items: center;
+    max-width: 78rem;
     text-align: center;
+  }
+
+  .indice-lista {
+    justify-content: center;
   }
 
   .testimonio{
@@ -716,9 +721,73 @@ img {
     max-width: 78rem;;
   }
 
+  .formulario{
+    max-width: 78rem;
+  }
+
   .pie{
     align-items: center;
   } 
 
 }
 
+/* Vista de escritorio */
+
+@media (min-width: 1024px){
+
+  h1 { font-size: 4.8rem; }
+  h2 { font-size: 3.2rem; }
+  h3 { font-size: 2.0rem; }
+
+   .portada{
+    background-image: url('../recursos/portada.jpg');
+    width: 100%;
+    justify-content: center;
+  } 
+
+  .cabecera{
+    max-width: 100%;
+  }
+
+  .menu-barra{
+    display: none;
+  }
+
+  .menu{
+    overflow: visible;
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+
+  .seccion{
+    max-width: 100rem;
+  }
+
+  .indice{
+    max-width: 100rem;
+    text-align: center;
+  }
+
+  .indice-lista {
+    justify-content: center;
+  }
+
+ .fila-propuestas{
+    max-width: 100rem;
+    display: flex;
+ }
+
+ .cita{
+    max-width: 100rem;
+  }
+
+  .formulario{
+    max-width: 100rem;
+  }
+
+  .pie{
+    width: 100%;;
+  }
+
+}
