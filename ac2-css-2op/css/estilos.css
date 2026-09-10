@@ -77,7 +77,7 @@ h3{
     background-color: #2D4A5C;
     position: sticky;
     top: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .identidad{
@@ -123,9 +123,19 @@ a{
 }
 
 .destacado{
+    display: block;
+    gap: 1rem;
+    padding: 10rem;
+    text-align: center;
     box-shadow: var(--sombra-2);
     animation: lados 2s ease;
     border-radius: var(--radio);
+}
+
+.accion-primaria{
+    margin-top: 3rem;
+    border-radius: var(--radio);
+    border: 0.1rem solid var(--color-boton);
 }
 
 #grupos h3{
