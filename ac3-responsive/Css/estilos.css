@@ -381,9 +381,11 @@ img {
   border-collapse: collapse;
   background-color: var(--blanco);
   border-radius: var(--radio);
-  overflow: hidden;
-  overflow-x: auto;
   box-shadow: var(--sombra); 
+}
+
+#calendario {
+  overflow-y: auto;
 }
 
 .tabla-titulo {
@@ -683,10 +685,6 @@ img {
     height: 50rem;
   } 
 
-  .seccion-alterna{
-    max-width: 78rem;
-  }
-
   .fila-propuestas{
     max-width: 78rem;
     flex-direction: row;
@@ -697,9 +695,9 @@ img {
     max-width: 78rem;
   } */
 
-  .seccion-alterna{
+  /* .seccion-alterna{
     max-width: 78rem;
-  }
+  } */
 
   .rejilla-galeria{
     max-width: 78rem;
@@ -789,7 +787,8 @@ img {
   }
 
  .fila-propuestas{
-    max-width: 100rem;
+    max-width: 100%;
+    justify-content: center;
     display: flex;
  }
 
