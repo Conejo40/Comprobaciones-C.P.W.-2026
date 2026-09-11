@@ -9,9 +9,6 @@
 
 
 /* ─── RESET ──────────────────────────────────────────────────────────── */
-html{
-  font-size: 62.5%;
-}
 
 * {
   margin: 0;
@@ -19,6 +16,9 @@ html{
   box-sizing: border-box;
 }
 
+html{
+  font-size: 62.5%;
+}
 
 /* ─── VARIABLES ──────────────────────────────────────────────────────── */
 :root {
@@ -426,6 +426,7 @@ img {
 .dos-columnas {
   display: flex;
   gap: 4.4rem;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -726,6 +727,7 @@ img {
 
   .dos-columnas{
     max-width: 80rem;
+    flex-wrap: nowrap;
   }
 
   .columna-figura{
@@ -802,6 +804,7 @@ img {
 
   .dos-columnas{
     max-width: 100rem;
+    flex-wrap: nowrap;
   }
   
   .columna-figura{
