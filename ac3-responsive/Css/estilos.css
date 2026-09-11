@@ -385,7 +385,7 @@ img {
 }
 
 #calendario {
-  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .tabla-titulo {
